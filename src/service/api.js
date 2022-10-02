@@ -20,6 +20,7 @@ axiosInstance.interceptors.request.use(
         } else if (config.TYPE.query) {
             config.url = config.url + '/';
         }
+        config.baseURL="https://all-about-pandemic-2.vercel.app/"
         return config;
     },
     function(error) {
