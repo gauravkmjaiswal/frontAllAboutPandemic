@@ -77,7 +77,7 @@ const Update = () => {
                 const data = new FormData();
                 data.append("name", file.name);
                 data.append("file", file);
-                
+                console.log(data)
                 const response = await API.uploadFile(data);
                 if (response.isSuccess) {
                     post.picture = response.data;
